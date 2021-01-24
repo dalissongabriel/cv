@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  color: rgb(76, 76, 76);
 }
 
 a {
@@ -117,7 +118,8 @@ section.sessao {
 }
 .card.card-list > ul > li {
   font-size: 0.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.5rem;
 } 
 /* FOOTER */
 .lista-contatos {
