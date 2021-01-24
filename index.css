@@ -1,0 +1,174 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+/* TIPOGRAFIA */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.8rem;
+}
+
+
+h1 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.8rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.f-efeito {
+  margin-top: 0;
+  color: white;
+
+}
+
+h2 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.4rem;
+}
+
+
+
+
+/*  MAIN */
+body {
+  --primary-color: #cf511f;
+background-image: linear-gradient(to right bottom, #002359, #004f88, #007eaa, #00adbe, #39dcc6);
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+header blockquote p {
+  color: gray;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+section.sessao {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 2fr;
+  background: rgba(253, 253, 253, 0.199);
+  box-shadow: 0 3px 10px 0 rgba(31, 38, 135, 0.185);
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 5px;
+}
+
+.sessao-titulo {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 2px;
+  box-shadow: 0 3px 10px 0 rgba(31, 38, 135, 0.185);
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.card.card-list > ul {
+  list-style-position: inside;
+  list-style-type: square;
+}
+.card.card-list > ul > li {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+} 
+/* FOOTER */
+.lista-contatos {
+  justify-content: center;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  
+}
+.fa {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  height: 100%;
+  text-align: center;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+
+}
+
+.fa-linkedin {background-color: #0A66C2;}
+
+.fa-twitter {background-color: #1DA1F2;}
+
+.fa-google {background-color: #EA4335;}
+
+
+footer {
+  padding: 2rem;
+  min-height: 5rem;
+}
+@media (max-width: 800px)
+{
+
+  .container {
+    min-width: 250px;
+    margin: 0 30px;
+  }
+
+}
+
+@media (max-width: 600px)
+{
+
+  section.sessao {
+    display: block;
+  }
+  .sessao-titulo {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+}
